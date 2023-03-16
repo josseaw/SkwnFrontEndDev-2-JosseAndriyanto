@@ -1,0 +1,130 @@
+/* Section Hero */
+section.hero {
+  background-image: linear-gradient(45deg, #2f90f6, #3bd1e8);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+section.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  color: #ffffff;
+  padding-bottom: 64px;
+}
+
+section.hero .container .hero__header {
+  width: 100%;
+}
+
+section.hero .container .hero__header .header__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+section.hero .container .hero__header .header__left .btn-close {
+  background-image: url(btn-back.png);
+  opacity: 1;
+}
+
+section.hero .container .hero__header .header__right {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+section.hero .container .hero__header .header__right img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Section Statistics */
+section.stats .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.stats .stats__graph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.stats .stats__graph img {
+  width: 100%;
+}
+
+/* Section History */
+section.history .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.history .container .history__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+section.history .container .history__cards .card-history {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+section.history .container .history__cards .card-history .card-img {
+  background-color: #cfdefc;
+  border-radius: 100%;
+  padding: 4px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.history .container .history__cards .card-history .card-img img {
+  width: 32px;
+  height: 32px;
+}
+
+section.history .container .history__cards .card-history .card-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+section.history .container .history__cards .card-history .card-body .top__left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+section.history .container .history__cards .card-history .card-body .bottom__left {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+section.history .container .history__cards .card-history .card-body .bottom__left img {
+  width: 16px;
+  height: 16px;
+}

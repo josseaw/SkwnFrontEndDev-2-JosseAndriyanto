@@ -1,0 +1,220 @@
+/* Header Section */
+section.header .container .header__left {
+  display: flex;
+  flex-direction: column;
+}
+
+section.header .container .header__right {
+  width: 56px;
+  height: 56px;
+  background-image: url(avatar.png);
+  background-size: cover;
+}
+
+/* Cards Section */
+section.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.cards .cards__view {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  overflow: auto;
+  margin-left: 20px;
+}
+
+section.cards .cards__view::-webkit-scrollbar {
+  border-radius: 10px;
+  height: 4x;
+  background-color: #e0e0e0;
+}
+section.cards .cards__view::-webkit-scrollbar-thumb {
+  height: 4px;
+  border-radius: 10px;
+  background-color: #3bd1e8;
+}
+
+section.cards .cards__view .card--visa {
+  border-radius: 10px;
+  background-image: linear-gradient(45deg, #2f90f6, #3bd1e8);
+  color: #ffffff;
+  min-width: 300px;
+  max-width: 300px;
+  height: 200px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.cards .cards__view .card--visa .card__header img {
+  width: 32px;
+  height: 32px;
+}
+
+section.cards .cards__view .card--visa .card__header p {
+  font-size: 14px;
+}
+
+section.cards .cards__view .card--visa .card__body {
+  margin-top: 56px;
+}
+
+section.cards .cards__view .card--visa .card__footer {
+  margin-top: 8px;
+}
+
+section.cards .cards__view .card--visa .card__footer img {
+  width: 48px;
+  height: 48px;
+}
+
+section.cards .cards__view .card--visa-2 {
+  background-image: linear-gradient(45deg, white, rgb(231, 231, 231));
+  color: #242424;
+}
+
+/* Menu Section */
+section.menu .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+section.menu .container .menu__menus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.menu .container .menu__menus .option-menu-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  align-items: center;
+  text-align: center;
+}
+
+section.menu .container .menu__menus .option-menu-wrap .menu-btn {
+  border-radius: 100%;
+  background-color: #eff4fe;
+  overflow: hidden;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+section.menu .container .menu__menus .option-menu-wrap .menu-btn:hover {
+  background-color: #cfdefc;
+}
+
+section.menu .container .menu__menus .option-menu-wrap .menu-btn img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Logs Section */
+section.log .container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 90px;
+}
+
+section.log .container .log__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+section.log .container .log__cards .card-log {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+section.log .container .log__cards .card-log .card-img {
+  background-color: #cfdefc;
+  border-radius: 100%;
+  padding: 4px;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.log .container .log__cards .card-log .card-img img {
+  width: 32px;
+  height: 32px;
+}
+
+section.log .container .log__cards .card-log .card-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+section.log .container .log__cards .card-log .card-body .top__left {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+section.log .container .log__cards .card-log .card-body .bottom__left {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+}
+
+section.log .container .log__cards .card-log .card-body .bottom__left img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Navbar Section */
+nav.navbar {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 86px;
+}
+
+nav.navbar .container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+nav.navbar .container .nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav.navbar .container .nav img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all 0.2;
+}
+
+nav.navbar .container .nav img:hover {
+  transform: scale(1.05);
+}
